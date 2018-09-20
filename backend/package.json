@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "project with react and redux",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name todo-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willdevsp/react_redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willdevsp/react_redux/issues"
+  },
+  "homepage": "https://github.com/willdevsp/react_redux#readme",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "mongoose": "4.7.0",
+    "node-restful": "0.2.5",
+    "pm2": "2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
+}
