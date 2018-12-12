@@ -4,6 +4,7 @@
   "description": "project with react and redux",
   "main": "backend/src/loader.js",
   "scripts": {
+    "start" : "node backend/src/loader.js",
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name todo-app"
   },
