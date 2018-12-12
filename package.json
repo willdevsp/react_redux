@@ -4,7 +4,7 @@
   "description": "project with react and redux",
   "main": "backend/src/loader.js",
   "scripts": {
-    "start" : "node backend/src/loader.js",
+    "start": "node backend/src/loader.js",
     "heroku-postbuild": "webpack -p",
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name todo-app"
@@ -46,5 +46,8 @@
     "mongoose": "4.7.0",
     "node-restful": "0.2.5",
     "pm2": "2.1.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2"
   }
 }
