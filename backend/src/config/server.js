@@ -11,9 +11,9 @@ server.use(allowCors)
 
 const localPublic = 'frontend/public/';
 
-server.use(express.static(localPublic))
+server.use(express.static(__dirname+'/frontend/public'))
 
-server.use(express.static(path.join(__dirname, 'frontend/public')));
+//server.use(express.static(path.join(__dirname, 'frontend/public')));
 
 server.listen(process.env.PORT || port, function(){
     console.log(`Backend is running in port ${port}.`);
