@@ -9,13 +9,13 @@ server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
 server.use(allowCors)
 
-const localPublic = 'frontend/public/';
 
-server.use(express.static(localPublic))
 
-server.get("*", (req, res)=> {
-    res.sendFile(path.resolve(localPublic))
-})
+//server.use(express.static(__dirname+'/frontend/public/'))
+
+//server.get("*", (req, res)=> {
+//    res.sendFile(path.resolve(__dirname+'/frontend/public/'))
+//})
 
 server.listen(process.env.PORT || port, function(){
     console.log(`Backend is running in port ${port}.`);
