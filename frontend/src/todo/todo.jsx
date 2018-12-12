@@ -5,7 +5,7 @@ import PageHeader from '../template/pageHeader'
 import TodoForm from './todoForm';
 import TodoList from './todoList';
 
-const URL = 'http://localhost:3003/api/todos'
+const URL = process.env.api || 'http://localhost:3003/api/todos'
 
 export default class Todo extends Component{
     constructor(props){        
