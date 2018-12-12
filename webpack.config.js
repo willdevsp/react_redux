@@ -4,8 +4,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 module.exports = {
     entry: './frontend/src/index.jsx',
     output: {
-        path: __dirname + '/public',
-        filename: './frontend/app.js'
+        path: __dirname + '/frontend/public',
+        filename: './app.js'
     },
     devServer: {
         port: 8080,
