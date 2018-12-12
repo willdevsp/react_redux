@@ -4,9 +4,9 @@ import axios from  'axios'
 import PageHeader from '../template/pageHeader'
 import TodoForm from './todoForm';
 import TodoList from './todoList';
-require('dotenv').config()
 
-const URL = process.env.URL || 'http://localhost:3003/api/todos'
+
+const URL = 'https://todoappwill.herokuapp.com/api/todos'
 console.log(process.env.URL);
 
 export default class Todo extends Component{
