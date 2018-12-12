@@ -8,14 +8,11 @@ const path = require('path');
 server.use(bodyParser.urlencoded({extended: true}))
 server.use(bodyParser.json())
 server.use(allowCors)
+server.use(express.static(path.join(__dirname, '/frontend/public')));
 
-const localPublic = '../../../frontend/public/';
 
-server.use(express.static(localPublic))
 
-server.get("*", (req, res)=> {
-    res.sendFile(path.resolve(localPublic))
-})
+
 
 server.listen(process.env.PORT || port, function(){
     console.log(`Backend is running in port ${port}.`);
