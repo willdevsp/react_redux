@@ -5,7 +5,7 @@
   "main": "backend/src/loader.js",
   "scripts": {
     "start" : "node backend/src/loader.js",
-    "heroku-postbuild": "webpack --progress -p",
+    "heroku-postbuild": "webpack -p",
     "dev": "nodemon",
     "production": "pm2 start src/loader.js --name todo-app"
   },
