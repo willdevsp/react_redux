@@ -1,10 +1,11 @@
 {
-  "name": "react_redux",
+  "name": "backend",
   "version": "1.0.0",
   "description": "project with react and redux",
-  "main": "index.js",
+  "main": "backend/src/loader.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors --inline --hot"
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name todo-app"
   },
   "repository": {
     "type": "git",
@@ -17,18 +18,15 @@
     "url": "https://github.com/willdevsp/react_redux/issues"
   },
   "homepage": "https://github.com/willdevsp/react_redux#readme",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "mongoose": "4.7.0",
+    "node-restful": "0.2.5",
+    "pm2": "2.1.5"
+  },
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-plugin-transform-object-rest-spread": "^6.22.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "cssloader": "^1.1.1",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "nodemon": "1.11.0"
   }
 }
+
