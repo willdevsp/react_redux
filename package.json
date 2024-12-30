@@ -18,7 +18,7 @@
   "license": "ISC",
   "homepage": "https://github.com/willdevsp/react_redux#readme",
   "devDependencies": {
-    "axios": "^0.15.3",
+    "axios": "^1.7.9",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-react-html-attrs": "^2.0.0",
@@ -40,14 +40,14 @@
     "redux-thunk": "^2.2.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
-    "body-parser": "1.15.2",
+    "body-parser": "1.20.3",
     "dotenv": "^6.2.0",
     "express": "4.14.0",
-    "mongoose": "4.7.0",
-    "node-restful": "0.2.5",
-    "pm2": "2.1.5"
+    "mongoose": "8.9.2",
+    "node-restful": "0.2.6",
+    "pm2": "5.4.3"
   }
 }
