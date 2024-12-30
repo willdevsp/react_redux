@@ -20,12 +20,12 @@
   "homepage": "https://github.com/willdevsp/react_redux#readme",
   "dependencies": {
     "body-parser": "1.20.3",
-    "express": "4.14.0",
-    "mongoose": "6.13.5",
-    "node-restful": "0.2.5",
-    "pm2": "2.1.5"
+    "express": "4.21.2",
+    "mongoose": "8.9.2",
+    "node-restful": "0.2.6",
+    "pm2": "5.4.3"
   },
   "devDependencies": {
-    "nodemon": "1.11.0"
+    "nodemon": "3.1.9"
   }
 }
